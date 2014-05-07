@@ -1,0 +1,20 @@
+<package>
+  <metadata>
+    <id>Octopack.Cassette</id>
+    <version>0.0.0.0</version>
+    <authors>markcoleman</authors>
+    <owners>markcoleman</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Octopack with Cassette.MsBuild</description>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="cassette-cache\**\*.*" target="cassette-cache" />
+    <file src="Views\Web.config" target="Views\Web.config" />
+    <file src="Cassette.targets" target="Cassette.targets" />
+    <file src="css\app.css" target="css\app.css" />
+    <file src="index.aspx" target="index.aspx" />
+    <file src="Web.config" target="Web.config" />
+    <file src="bin\*.*" target="bin" />
+  </files>
+</package>
