@@ -11,7 +11,8 @@
   <files>
     <file src="cassette-cache\**\*.*" target="cassette-cache" />
     <file src="Views\Web.config" target="Views\Web.config" />
-    <file src="Cassette.targets" target="Cassette.targets" />
+    <file src="js\**\*.*" target="js" />
+    <file src="lib\**\*.*" target="lib" />
     <file src="css\app.css" target="css\app.css" />
     <file src="index.aspx" target="index.aspx" />
     <file src="Web.config" target="Web.config" />

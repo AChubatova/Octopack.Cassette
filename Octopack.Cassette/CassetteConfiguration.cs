@@ -9,8 +9,8 @@ namespace Octopack.Cassette
         public void Configure(BundleCollection bundles)
         {
             bundles.Add<StylesheetBundle>("css");
-            bundles.Add<ScriptBundle>("js");
             bundles.Add<ScriptBundle>("lib");
+            bundles.Add<ScriptBundle>("js");
         }
     }
 }

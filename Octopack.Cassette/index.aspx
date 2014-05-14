@@ -1,13 +1,18 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Octopack.Cassette.index" %>
 
+<%
+    Bundles.Reference("css");
+    Bundles.Reference("lib"); 
+    Bundles.Reference("js");
+%>
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Octopack with Cassette</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-    <link href="css/app.css" rel="stylesheet" />
-
+    <%:Bundles.RenderStylesheets() %>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -31,8 +36,6 @@
             </div>
         </div>
     </form>
-    <script src="lib/jquery-2.1.0.js"></script>
-    <script src="js/app.calculator.js" type="text/javascript"></script>
-    <script src="js/app.js" type="text/javascript"></script>
+    <%:Bundles.RenderScripts() %>
 </body>
 </html>
